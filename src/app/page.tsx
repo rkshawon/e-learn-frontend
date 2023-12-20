@@ -1,5 +1,3 @@
-
-
 // sections
 import Hero from "./(landingPage)/hero";
 import OutImpressiveStats from "./(landingPage)/out-impressive-stats";
@@ -13,7 +11,6 @@ import TrustedCompany from "./(landingPage)/trusted-companies";
 export default function Campaign() {
   return (
     <>
-
       <Hero />
       <OutImpressiveStats />
       <CoursesCategories />
@@ -22,7 +19,6 @@ export default function Campaign() {
       <Events />
       <StudentsFeedback />
       <TrustedCompany />
-
     </>
   );
 }
