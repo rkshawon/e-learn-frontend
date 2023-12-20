@@ -89,12 +89,8 @@ export function Navbar() {
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
               <Button variant="text">Log in</Button>
-              <a
-                href="https://www.material-tailwind.com/blocks"
-                target="_blank"
-              >
-                <Button color="gray">Blocks</Button>
-              </a>
+              <Button color="teal">Blocks</Button>
+        
             </div>
             <IconButton
               variant="text"
