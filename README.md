@@ -14,7 +14,9 @@ This template, created with Tailwind CSS and Material Tailwind, offers seamless 
 
 Quick start options:
 
-- Download or fork the repo. Use npm install / npm i to install dependency and then hit npm run dev to bootstrap the project.
+- Download or fork the repo.
+- Use command `npm install` / `npm i` to install dependencies.
+- Hit `npm run dev` to bootstrap the project.
 
 ## Browser Support
 
