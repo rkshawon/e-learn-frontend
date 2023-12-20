@@ -1,20 +1,19 @@
-// components
-import { Navbar, Footer } from "@/components";
+
 
 // sections
-import Hero from "./hero";
-import OutImpressiveStats from "./out-impressive-stats";
-import CoursesCategories from "./courses-categories";
-import ExploreCourses from "./explore-courses";
-import Testimonial from "./testimonial";
-import Events from "./events";
-import StudentsFeedback from "./students-feedback";
-import TrustedCompany from "./trusted-companies";
+import Hero from "./(landingPage)/hero";
+import OutImpressiveStats from "./(landingPage)/out-impressive-stats";
+import CoursesCategories from "./(landingPage)/courses-categories";
+import ExploreCourses from "./(landingPage)/explore-courses";
+import Testimonial from "./(landingPage)/testimonial";
+import Events from "./(landingPage)/events";
+import StudentsFeedback from "./(landingPage)/students-feedback";
+import TrustedCompany from "./(landingPage)/trusted-companies";
 
 export default function Campaign() {
   return (
     <>
-      <Navbar />
+
       <Hero />
       <OutImpressiveStats />
       <CoursesCategories />
@@ -23,7 +22,7 @@ export default function Campaign() {
       <Events />
       <StudentsFeedback />
       <TrustedCompany />
-      <Footer />
+
     </>
   );
 }
