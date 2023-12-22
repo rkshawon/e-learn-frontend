@@ -1,25 +1,36 @@
-# [E-Learn Landing Page](http://demos.creative-tim.com/nextjs-tailwind-course-landing-page?ref=readme-ntpp)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-tailwind-course-landing-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-course-landing-page/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-tailwind-course-landing-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-course-landing-page/issues?q=is%3Aissue+is%3Aclosed)
+## Getting Started
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/744/original/material-tailwind-react-courses-template-thumbnail.jpg?1697633842)
+First, run the development server:
 
-Introducing E-Learn, a versatile and engaging plateform to build new carear in tech world.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Are you looking for a professionally designed and highly customizable course landing page template, ideal for clients like educators, institutions, and online course creators to showcase courses, attract potential students, and gain conversions? Your search ends here! We are excited to present to you our Free Course Landing Page Template, meticulously crafted to cater to the needs of course providers.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This template, created with Tailwind CSS and Material Tailwind, offers seamless customization to align perfectly with your course offerings and branding. The free course landing page template includes essential features such as hero image, stats, features, and testimonial sections.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Quick start
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Quick start options:
+## Learn More
 
-- Download or fork the repo.
-- Use command `npm install` / `npm i` to install dependencies.
-- Hit `npm run dev` to bootstrap the project.
+To learn more about Next.js, take a look at the following resources:
 
-## Browser Support
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## e-learn
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

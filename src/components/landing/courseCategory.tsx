@@ -1,22 +1,11 @@
-"use client";
-
-import React from "react";
-import {
-  Button,
-  Typography,
-  Card,
-  CardBody,
-} from "@material-tailwind/react";
-
 import {
   GlobeEuropeAfricaIcon,
   MicrophoneIcon,
   PuzzlePieceIcon,
   HeartIcon,
 } from "@heroicons/react/24/solid";
-
-import CategoryCard from "@/components/category-card";
-
+import CategoryCard from "./categoryCard";
+import { Button } from "../ui/button";
 
 const CATEGORIES = [
   {
@@ -45,42 +34,34 @@ const CATEGORIES = [
   },
 ];
 
-export function CoursesCategories() {
+function CoursesCategories() {
   return (
     <section className="container mx-auto px-8 py-36">
       <div className="mb-20 grid place-items-center text-center">
-        <Typography variant="h2" color="blue-gray" className="my-3">
+        <h2 className="my-3 text-blue-gray font-semibold text-4xl">
           Courses Categories
-        </Typography>
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+        </h2>
+        <p className="text-gray-500 lg:w-6/12">
           A comprehensive selection of courses designed to empower you with the
           skills you need to thrive in the dynamic world of web development.
-        </Typography>
+        </p>
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <Card
-          color="gray"
-          className="relative grid h-full w-full place-items-center overflow-hidden text-center"
-        >
+        <div className="relative grid h-full w-full place-items-center overflow-hidden text-center bg-gray-900">
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
-          <CardBody className="relative w-full">
-            <Typography color="white" className="text-xs font-bold opacity-50">
+          <div className="relative w-full">
+            <p className="text-xs font-bold opacity-50 text-white">
               HTML, CSS & Javascript
-            </Typography>
-            <Typography variant="h4" className="mt-9" color="white">
-              Web Development Intro
-            </Typography>
-            <Typography
-              color="white"
-              className="mt-4 mb-14 font-normal opacity-50"
-            >
+            </p>
+            <h4 className="mt-9 text-white">Web Development Intro</h4>
+            <p className="mt-4 mb-14 font-normal opacity-50 text-white">
               Ready to start your web development journey?
-            </Typography>
-            <Button size="sm" color="white">
+            </p>
+            <Button className="bg-white hover:bg-gray-200 text-black">
               Enroll Now
             </Button>
-          </CardBody>
-        </Card>
+          </div>
+        </div>
         <div className="col-span-1 flex flex-col gap-6">
           {CATEGORIES.slice(0, 2).map((props, key) => (
             <CategoryCard key={key} {...props} />

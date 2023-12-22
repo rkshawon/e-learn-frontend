@@ -1,15 +1,10 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Layout } from "@/components";
-// components
-import { Navbar, Footer } from "@/components";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "E-Learn Landing Page",
@@ -24,21 +19,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          defer
-          data-site="YOUR_DOMAIN_HERE"
-          src="https://api.nepcha.com/js/nepcha-analytics.js"
-        ></script>
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-      </head>
-      <body className={roboto.className}>
-        <Layout>
-          <Navbar />
-          {children}
-          <Footer />
-        </Layout>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );
 }
+
+// import { Roboto } from "next/font/google";
+
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "700", "900"],
+//   display: "swap",
+// });
