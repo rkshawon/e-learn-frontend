@@ -15,7 +15,7 @@ const Signin = () => {
 
   return (
     <div className="my-20 flex flex-col items-center justify-center">
-      <div className="bg-white shadow-md  py-10 px-4 rounded-xl flex flex-col gap-5 w-3/12 min-w-[250px] max-w-[350px]">
+      <div className="bg-[#fafafa] shadow-md  py-10 px-4 rounded-xl flex flex-col gap-5 w-3/12 min-w-[250px] max-w-[350px]">
         <h2 className="text-2xl font-bold mb-4 text-center">Sign Up</h2>
         <Input
           type="text"
