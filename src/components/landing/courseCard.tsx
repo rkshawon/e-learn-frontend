@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 interface CourseCardProps {
   img: string;
@@ -11,6 +13,7 @@ interface CourseCardProps {
 }
 
 function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
+  const router = useRouter();
   return (
     <div className="border rounded-lg overflow-hidden bg-white shadow hover:shadow-md transition duration-300 ease-in-out">
       <div className="h-64 overflow-hidden">
@@ -33,7 +36,7 @@ function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
           <h5 className="mb-2 normal-case">{title}</h5>
         </a>
         <p className="mb-6 font-normal text-gray-500">{desc}</p>
-        <Button>{label}</Button>
+        <Button onClick={() => router.push("/courses/1")}>{label}</Button>
       </div>
     </div>
   );

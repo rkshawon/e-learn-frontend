@@ -8,7 +8,7 @@ export function Navbar() {
   const router = useRouter();
 
   return (
-    <div className="sticky top-0 flex items-center justify-center z-10 ">
+    <div className="sticky top-0 flex items-center justify-center z-10 mb-10">
       <div className="flex items-center justify-around gap-20 w-[80%] bg-white backdrop-blur-md bg-opacity-80 shadow-md mt-5 py-3 px-4 rounded-xl ">
         <div className="flex items-center gap-4">
           <h1>E Learn</h1>
